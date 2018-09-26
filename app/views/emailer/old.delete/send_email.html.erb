@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <link href="<%=@app_root_url + 'stylesheets/email_template.css'%>" rel="stylesheet" type="text/css" />     
+  </head>
+  <body id="email">
+    <div id="page">
+      <div id="left_img" style="display: block; height: 556px; width: 160px; position: absolute; top: 0px; left: 0px;">
+        <img src="<%=@app_root_url + 'images/email/WS_Email_left.png'%>"/>
+      </div>
+
+      <div id="top_img" style="display: block; height: 72px; width: 281px; position: absolute; top: 0px; left: 160px;">
+        <img src="<%=@app_root_url + 'images/email/WS_Email_top.png'%>"/>
+      </div>
+
+      <div id="right_img" style="display: block; height: 556px; width: 53px; position: absolute; top: 0px; left: 441px;">
+        <img src="<%=@app_root_url + 'images/email/WS_Email_right.png'%>"/>
+      </div>
+      
+      <div id="btm_img" style="display: block; height: 94px; width:494px; position: absolute; top: 556px; left: 441px;">
+        <img src="<%=@app_root_url + 'images/email/WS_Email_footer.png'%>"/>
+      </div>
+      
+      <div id="email_content">
+        <%= @message %>
+      </div>
+        
+      <div id="copyright">
+        <h5> © 2011 Willstream Labs Inc., Toronto, Canada.<br></h5>
+      </div>
+    </div>
+  </body>
+</html>
+

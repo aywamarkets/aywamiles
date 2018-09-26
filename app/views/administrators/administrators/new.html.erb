@@ -1,0 +1,4 @@
+<h2>New admin</h2>
+<%= form_for [:administrators, @administrator] do |f| %>
+    <%= render :partial => 'form', :locals => {:f => f} %>
+<% end %>

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body id="email" style="width: 700px; margin-top: 0px; background-color: #ffffff; text-align: center;">
+    
+    <table id="page" style="width: 700px; height: 650px; border-width: 0px; border-style: hidden; border-spacing:0px; border-color: white; padding: 0;">
+      <tbody>
+        <tr>
+          <td id="top_img" style="height: 75px; width: 700px; border-width: 0px; border-style: hidden; border-spacing:0px; border-color: white; padding: 0;" colspan="3">
+            <%= image_tag "email/Aywa_Email_genericheader.png" %>
+          </td>
+        </tr>
+        <tr>
+
+          <td id="email_content" style="margin-top: 0px; width: 700px; border-width: 0px; border-style: hidden; background-color: #fdfdfd; border-spacing:0px; border-color: white; padding: 30px;">
+
+            <h1 style="
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 28px;
+              font-style: normal;
+              text-align: center;
+              font-weight: bold;
+              color: #0079c1;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;">
+              <%= @headline.html_safe %>
+            </h1>
+                  
+            <h3 style="
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 12px;
+              font-weight: normal;
+              color: #000000;
+              text-align: left;
+              margin-top: 20px;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;">
+              <%= @welcome.html_safe %>
+            </h3>
+
+            <p style="font-family: Arial, Helvetica, sans-serif;
+              font-size: 12px;
+              font-weight: normal;
+              color: #000000;
+              text-align: left;
+              margin-top: 15px;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;">
+              <%= @email_body.html_safe %>
+            </p>
+
+            <p style="font-family: Arial, Helvetica, sans-serif;
+              font-size: 12px;
+              font-weight: normal;
+              color: #000000;
+              text-align: left;
+              margin-top: 15px;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;">
+              <%= @goodbye.html_safe %>
+            </p>
+            
+          </td> <!--end of email_content cell -->
+
+        </tr>
+        <tr>
+          <td valign="middle" id="btm_img" style="height: 48px; width:700px; border-width: 0px; border-style: hidden; border-spacing:0px; background-color: #dfdfdf; padding: 0;" colspan="3">
+            <%= image_tag "email/WS_Email_facebook.png", :style => "padding-right: 15px" %>
+            <%= image_tag "email/WS_Email_twitter.png", :style => "padding-right: 15px" %>
+            <%= image_tag "email/WS_Email_google_plus.png"%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div id="copyright" style="
+    align: right;">
+      <h5 style="
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: normal;
+        color: #6a737b;
+        text-align: right;">
+        © 2014 Aywa Markets Inc., Toronto, Canada.<br>
+      </h5>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body id="email" style="
+  height: 650px;
+  width: 495px;
+  margin-top: 0px;
+  background-color: #ffffff;
+  text-align: center;">
+    
+    <table id="page" style="width: 495px; height: 650px; border-width: 0px; border-style: hidden; border-spacing:0px; border-color: white; padding: 0;">
+      <tbody>
+        <tr>
+          <td id="top_img" style="height: 97px; width: 495px; border-width: 0px; border-style: hidden; border-spacing:0px; border-color: white; padding: 0;" colspan="3">
+            <img src="<%=@app_root_url + 'images/email/WS_Email_top.png'%>"/>
+          </td>
+        </tr>
+        <tr>
+          <td id="left_img" style="height: 459px; width: 160px; border-width: 0px; border-style: hidden; background-color: white; border-spacing:0px; border-color: white; padding: 0;">
+            <img src="<%=@app_root_url + 'images/email/WS_Email_left.png'%>"/>
+          </td>
+
+          <td id="email_content" style="margin-top: 0px; height: 281px; width: 273px; border-width: 0px; border-style: hidden; background-color: white; border-spacing:0px; border-color: white; padding: 0;">
+
+            <h1 style="
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+              font-style: normal;
+              text-align: left;
+              font-weight: bold;
+              color: #0079c1;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;">
+              <%= @headline.html_safe %>
+            </h1>
+
+            <h3 style="
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 11px;
+              font-weight: normal;
+              color: #000000;
+              text-align: left;
+              width: 273px;
+              margin-top: 20px;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;">
+              <%= @welcome.html_safe %>
+            </h3>
+
+            <p style="font-family: Arial, Helvetica, sans-serif;
+              font-size: 11px;
+              font-weight: normal;
+              color: #000000;
+              text-align: left;
+              width: 273px;
+              margin-top: 15px;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;">
+              <%= @email_body.html_safe %>
+            </p>
+
+            <p style="font-family: Arial, Helvetica, sans-serif;
+              font-size: 11px;
+              font-weight: normal;
+              color: #000000;
+              text-align: left;
+              width: 273px;
+              margin-top: 15px;
+              margin-right: 0px;
+              margin-bottom: 0px;
+              margin-left: 0px;">
+              <%= @goodbye.html_safe %>
+            </p>
+            
+          </td> <!--end of email_content cell -->
+
+          <td id="right_img" style="height: 459px; width: 62px; border-width: 0px; border-style: hidden; border-spacing:0px; border-color: white; padding: 0;">
+            <img src="<%=@app_root_url + 'images/email/WS_Email_right.png'%>"/>
+          </td>
+        </tr>
+        <tr>
+          <td id="btm_img" style="height: 94px; width:495px; border-width: 0px; border-style: hidden; border-spacing:0px; border-color: white; padding: 0;" colspan="3">
+            <img src="<%=@app_root_url + 'images/email/WS_Email_footer.png'%>"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div id="copyright" style="
+    align: right;">        
+      <h5 style="
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: normal;
+        color: #6a737b;
+        text-align: right;">
+        © 2014 Aywa Markets Inc., Toronto, Canada.<br>
+      </h5> 
+    </div>
+
+  </body>
+</html>

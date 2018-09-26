@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
-  devise_for :agents
-  devise_for :merchants
-  devise_for :partners
-  devise_for :resellers
-  devise_for :officers
-  devise_for :users
   devise_for :administrators
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root to: 'home#index'
+  devise_for :partners
+
+  root :to => 'home#index'
+  namespace :administrators do
+    root :to => 'home#index'
+    resources :administrators, :only => [:new, :create, :index]
+    resources :partner_organizations
+    resources :partners
+  end
+
+  namespace :partners do
+  end
 end

@@ -1,0 +1,26 @@
+<%= link_to 'New partner organization', new_administrators_partner_organization_path, class: 'btn btn-link px-0' %><br />
+<h1>Partner organizations</h1>
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Name</th>
+    <th scope="col">Country</th>
+    <th scope="col">Payment network</th>
+    <th scope="col">Status</th>
+  </tr>
+  </thead>
+  <tbody>
+    <% count = 1 %>
+    <% @partner_organizations.each do |partner| %>
+      <tr>
+        <th scope="row"><%= count %></th>
+        <td><%= partner.name %></td>
+        <td><%= partner.country.name %></td>
+        <td><%= partner.payment_network %></td>
+        <td><%= partner.status %></td>
+      </tr>
+      <% count = count + 1 %>
+    <% end %>
+  </tbody>
+</table>
